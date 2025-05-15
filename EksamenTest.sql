@@ -11,51 +11,51 @@ CREATE TABLE Users (
 
 -- Opprett tabellen for resirkuleringsaktiviteter
 CREATE TABLE RecyclingActivities (
-    ActivityID SERIAL PRIMARY KEY,   -- Unik identifikator for aktivitet
-    UserID INT NOT NULL,             -- Fremmednøkkel til Users
-    ContainerID INT NOT NULL,        -- Fremmednøkkel til Containers
-    UnitsRecycled INT NOT NULL,      -- Antall enheter resirkulert
-    ActivityDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP, -- Tidspunkt for aktivitet
+    ActivityID SERIAL PRIMARY KEY,   
+    UserID INT NOT NULL,             
+    ContainerID INT NOT NULL,       
+    UnitsRecycled INT NOT NULL,    
+    ActivityDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP, 
     FOREIGN KEY (UserID) REFERENCES Users(UserID),
     FOREIGN KEY (ContainerID) REFERENCES Containers(ContainerID)
 );
 
 -- Opprett tabellen for konteinere
 CREATE TABLE Containers (
-    ContainerID SERIAL PRIMARY KEY,  -- Unik identifikator for konteiner
-    Location VARCHAR(255) NOT NULL,  -- Adresse eller GPS-koordinater
-    Capacity INT NOT NULL,           -- Total kapasitet
-    FillLevel DECIMAL(5,2) DEFAULT 0.00, -- Fyllingsgrad i prosent
-    TimesEmptied INT DEFAULT 0,      -- Antall tømminger
-    ActivityCount INT DEFAULT 0      -- Antall ganger brukt
+    ContainerID SERIAL PRIMARY KEY,  
+    Location VARCHAR(255) NOT NULL,  
+    Capacity INT NOT NULL,           
+    FillLevel DECIMAL(5,2) DEFAULT 0.00, 
+    TimesEmptied INT DEFAULT 0,      
+    ActivityCount INT DEFAULT 0      
 );
 
 -- Opprett tabellen for lodd i pantelotteriet
 CREATE TABLE LotteryTickets (
-    TicketID SERIAL PRIMARY KEY,     -- Unik identifikator for lodd
-    UserID INT NOT NULL,             -- Fremmednøkkel til Users
-    DrawID INT NOT NULL,             -- Fremmednøkkel til Draws
-    DrawDate DATE NOT NULL,          -- Trekningens dato
-    WinnerStatus BOOLEAN DEFAULT FALSE, -- Om loddet er et vinnerlodd
+    TicketID SERIAL PRIMARY KEY,     
+    UserID INT NOT NULL,             
+    DrawID INT NOT NULL,             
+    DrawDate DATE NOT NULL,         
+    WinnerStatus BOOLEAN DEFAULT FALSE, 
     FOREIGN KEY (UserID) REFERENCES Users(UserID),
     FOREIGN KEY (DrawID) REFERENCES Draws(DrawID)
 );
 
 -- Opprett tabellen for trekninger
 CREATE TABLE Draws (
-    DrawID SERIAL PRIMARY KEY,       -- Unik identifikator for trekning
-    DrawDateTime TIMESTAMP NOT NULL, -- Når trekningen skjer
-    WinnerUserID INT,                -- Fremmednøkkel til Users for vinner
-    Prize VARCHAR(255),              -- Premien som deles ut
+    DrawID SERIAL PRIMARY KEY,       
+    DrawDateTime TIMESTAMP NOT NULL, 
+    WinnerUserID INT,                
+    Prize VARCHAR(255),              
     FOREIGN KEY (WinnerUserID) REFERENCES Users(UserID)
 );
 
 -- Opprett tabellen for statistikk
 CREATE TABLE Statistics (
-    StatID SERIAL PRIMARY KEY,       -- Unik identifikator for statistikk
-    ContainerID INT NOT NULL,        -- Fremmednøkkel til Containers
-    Date DATE NOT NULL,              -- Dato for statistikk
-    TotalUnitsRecycled INT NOT NULL, -- Totalt antall enheter resirkulert
-    MostUsedContainer BOOLEAN DEFAULT FALSE, -- Om konteiner er mest brukt
+    StatID SERIAL PRIMARY KEY,       
+    ContainerID INT NOT NULL,        
+    Date DATE NOT NULL,              
+    TotalUnitsRecycled INT NOT NULL, 
+    MostUsedContainer BOOLEAN DEFAULT FALSE, 
     FOREIGN KEY (ContainerID) REFERENCES Containers(ContainerID)
 );
