@@ -4,3 +4,4 @@ Har hatt masse problemer med denne oppgaven, men begynte med å lage database mo
 har problemer med å få package.json og package-lock.json
 
 
+docker har offesielt blitt ødelagt og vil ikke bli åpnet...
