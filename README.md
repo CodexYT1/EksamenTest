@@ -13,14 +13,15 @@ serevren runner på localhost:3000 (Bruker nodemon for automatisk server restart
 
 * gå inn på terminal og start siden med:
     npm run dev     (For Development) 
+    -----------
     
     (Docker runner dette sammen med nodemon på en nettleser: standardnettleser. restarter server hver gang det skjer en endring...)
-    ------------------------------------------------------------------------------------------------------------------------------------
     
     Eller hvis du ikke trenger å redigere på kode, så kan du eventuelt prøve:
 
-    ------------------------------------------------------------------------------------------------------------------------------------
+    
     
     npm start       For Production (index.js blir kjørt på din standardnettleser: Google, Edge, Firefox etc...)
-
+    ---------
+    
     Nettsiden skal kunne kjøre normalt
