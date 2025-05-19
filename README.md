@@ -11,9 +11,9 @@ endret en god del...
 
 serevren runner på localhost:3000 (Bruker nodemon for automatisk server restarts kan velge om å ikke ha dette på)
 
-* ###gå inn på terminal og start siden med:
+* ### gå inn på terminal og start siden med:
     
-    ##npm run dev      
+    ## npm run dev      
     
     (For Development)
     
@@ -23,7 +23,7 @@ serevren runner på localhost:3000 (Bruker nodemon for automatisk server restart
 
     
     
-    ##npm start       
+    ## npm start       
     
     (For Production)
     
@@ -37,7 +37,7 @@ serevren runner på localhost:3000 (Bruker nodemon for automatisk server restart
 
 
 
-##Forklaring av kode
+## Forklaring av kode
 
 I EksamenTest.sql har jeg prøvd å lage enhver deltaken en bruker-ID som de bruker for å bli med i trekningen.
 I bruker-ID inneholder det Navn, Email, Strekkode, Antall lodd opptjent og RegistreringsDato...
