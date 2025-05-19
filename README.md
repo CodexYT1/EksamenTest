@@ -11,10 +11,9 @@ endret en god del...
 
 serevren runner på localhost:3000 (Bruker nodemon for automatisk server restarts kan velge om å ikke ha dette på)
 
-* gå inn på terminal og start siden med:
+* ###gå inn på terminal og start siden med:
     
-    npm run dev      
-    -----------
+    ##npm run dev      
     
     (For Development)
     
@@ -24,11 +23,24 @@ serevren runner på localhost:3000 (Bruker nodemon for automatisk server restart
 
     
     
-    npm start       
-    ---------
-
+    ##npm start       
+    
     (For Production)
     
     index.js blir kjørt på din standardnettleser: Google, Edge, Firefox etc...
     
     Nettsiden skal kunne kjøre normalt
+
+
+
+
+
+
+
+##Forklaring av kode
+
+I EksamenTest.sql har jeg prøvd å lage enhver deltaken en bruker-ID som de bruker for å bli med i trekningen.
+I bruker-ID inneholder det Navn, Email, Strekkode, Antall lodd opptjent og RegistreringsDato...
+Vi lager et nytt bord hvor ResirkuleringsAktiviteten til brukeren blir oppdatert for hver gang den resirkulerer glass og metallbeholdere...
+
+(Vi antar at en maskin skanner en strekkode som står på en merkelapp. Dersom merkelappen ikke fins, spytter maskinen ut "panten" )
