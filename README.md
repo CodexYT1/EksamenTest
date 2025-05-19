@@ -12,8 +12,11 @@ endret en god del...
 serevren runner på localhost:3000 (Bruker nodemon for automatisk server restarts kan velge om å ikke ha dette på)
 
 * gå inn på terminal og start siden med:
-    npm run dev     (For Development) 
+    
+    npm run dev      
     -----------
+    
+    (For Development)
     
     (Docker runner dette sammen med nodemon på en nettleser: standardnettleser. restarter server hver gang det skjer en endring...)
     
@@ -21,7 +24,9 @@ serevren runner på localhost:3000 (Bruker nodemon for automatisk server restart
 
     
     
-    npm start       For Production (index.js blir kjørt på din standardnettleser: Google, Edge, Firefox etc...)
+    npm start       
     ---------
+
+    For Production (index.js blir kjørt på din standardnettleser: Google, Edge, Firefox etc...)
     
     Nettsiden skal kunne kjøre normalt
