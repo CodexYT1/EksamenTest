@@ -45,4 +45,8 @@ I bruker-ID inneholder det Navn, Email, Strekkode, Antall lodd opptjent og Regis
 
 Vi lager et nytt bord hvor ResirkuleringsAktiviteten til brukeren blir oppdatert for hver gang den resirkulerer glass og metallbeholdere...
 
+Vi lager også et bord som viser hvilken konteiner og hvor mye den kan holde av pant brukeren har pantet i.
+
+Etter å ha pantet vil brukeren få
+
 (Vi antar at en maskin skanner en strekkode som står på en merkelapp. Dersom merkelappen ikke fins, spytter maskinen ut _"panten"_ )
