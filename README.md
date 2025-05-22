@@ -47,6 +47,6 @@ Vi lager et nytt bord hvor ResirkuleringsAktiviteten til brukeren blir oppdatert
 
 Vi lager også et bord som viser hvilken konteiner og hvor mye den kan holde av pant brukeren har pantet i.
 
-Etter å ha pantet vil brukeren få
+Etter å ha pantet vil brukeren få lodd den kan bruke til trekningen. Dersom flere lodd jo høyere sjanse er det på å vinne.
 
 (Vi antar at en maskin skanner en strekkode som står på en merkelapp. Dersom merkelappen ikke fins, spytter maskinen ut _"panten"_ )
